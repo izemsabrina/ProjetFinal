@@ -34,11 +34,13 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/navigation_graph" />
     </LinearLayout>
-<com.google.android.material.navigation.NavigationView
-    android:id="@+id/navView"
-    app:menu="@menu/nav_view_menu"
-    app:headerLayout="@layout/nav_view_header"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:layout_gravity="start"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_view_header"
+        app:itemIconTint="@android:color/holo_blue_bright"
+        app:menu="@menu/nav_view_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>

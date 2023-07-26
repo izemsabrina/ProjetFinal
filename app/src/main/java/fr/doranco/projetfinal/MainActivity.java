@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
         binding =ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolBar);
+        initNavigationComponents();
+
+    }
+
+    private void initNavigationComponents() {
         //configuration de connection de navigation avec le navigation view
 
         NavHostFragment navHostFragment=
@@ -52,6 +57,5 @@ public class MainActivity extends AppCompatActivity {
         );
         binding.drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
     }
 }
