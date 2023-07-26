@@ -17,6 +17,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolBar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/seed"
@@ -33,4 +34,11 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/navigation_graph" />
     </LinearLayout>
+<com.google.android.material.navigation.NavigationView
+    android:id="@+id/navView"
+    app:menu="@menu/nav_view_menu"
+    app:headerLayout="@layout/nav_view_header"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"/>
 </androidx.drawerlayout.widget.DrawerLayout>
